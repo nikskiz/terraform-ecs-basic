@@ -1,0 +1,8 @@
+# Building the Image with Dev
+docker build -t energy-one-app:dev .
+
+# Running the image locally on port 80
+docker run --name energy-one-app -dt -p 80:8080 energy-one-app:dev
+
+# Entering the container
+docker exec -it <container-id> bash
